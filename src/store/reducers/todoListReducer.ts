@@ -7,7 +7,7 @@ const defaultState = initialTodoList();
 
 export const todoListReducer = (
 	state = defaultState,
-	action: ActionInterface
+	action: ActionInterface | any
 ) => {
 	let todoList = state.slice();
 	switch (action.type) {

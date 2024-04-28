@@ -1,4 +1,4 @@
-import { KeyboardEvent, MouseEvent, SyntheticEvent, useState } from 'react';
+import { FC, KeyboardEvent, MouseEvent, SyntheticEvent, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import {
 	deleteTodoAction,
@@ -7,7 +7,10 @@ import {
 import { TodoInterface } from '@/types';
 import styles from './styles.module.scss';
 
-const TodoItem = ({ todo }: TodoInterface) => {
+export interface TodoItemProps {
+	todo: TodoInterface;
+}
+const TodoItem: FC<TodoItemProps> = ({ todo }) => {
 	const [editInputState, setEditInputState] = useState(false);
 	const [editInputValue, setEditInputValue] = useState(todo.text);
 

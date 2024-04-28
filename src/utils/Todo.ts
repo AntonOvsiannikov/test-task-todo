@@ -1,11 +1,11 @@
 import { TodoInterface } from '@/types';
 
 class Todo implements TodoInterface {
-	id: number;
+	id: number | boolean;
 	text: string;
 	checked: boolean;
 
-	constructor(id: number, text: string, checked: boolean) {
+	constructor(id: number | boolean, text: string, checked: boolean) {
 		this.id = id || new Date().valueOf();
 		this.text = text;
 		this.checked = checked || false;

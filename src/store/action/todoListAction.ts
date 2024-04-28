@@ -1,6 +1,6 @@
 import { TodoInterface } from '@/types';
 
-export const addTodoAction = (todoText: TodoInterface) => {
+export const addTodoAction = (todoText: string) => {
 	return {
 		type: 'ADD_TODO_ITEM',
 		todoText,
@@ -23,7 +23,7 @@ export const clearAllTodoDoneAction = () => {
 		type: 'CLEAR_ALL_TODO_ITEM_DONE',
 	};
 };
-export const checkAllTodoAction = (allTrueState: TodoInterface[]) => {
+export const checkAllTodoAction = (allTrueState: boolean) => {
 	return {
 		type: 'CHECK_ALL_TODO_ITEM',
 		allTrueState,

@@ -4,7 +4,7 @@ import { addTodoAction } from '@/store/action/todoListAction';
 import styles from './styles.module.scss';
 
 const UserInput = () => {
-	const [inputValue, setInputValue] = useState('');
+	const [inputValue, setInputValue] = useState<string>('');
 	const dispatch = useDispatch();
 
 	const addTodoItem = (

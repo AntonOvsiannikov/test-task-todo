@@ -1,7 +1,9 @@
 export interface TodoInterface {
-	id: number;
+	id: number | any;
 	text: string;
 	checked: boolean;
+	toggle: (state: boolean) => void;
+	newText: (newText: string) => void;
 }
 export interface ActionInterface {
 	type: string;
