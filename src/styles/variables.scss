@@ -1,0 +1,38 @@
+@mixin common-input {
+	position: relative;
+	margin: 0;
+	width: 100%;
+	font-size: $font-size-24;
+	font-family: inherit;
+	font-weight: inherit;
+	line-height: 1.4em;
+	border: 0;
+	color: inherit;
+	padding: 6px;
+	border: 1px solid #999;
+	box-shadow: inset 0 -1px 5px 0 rgba(0, 0, 0, 0.2);
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+$color-primary-light-white: #e6e6e6;
+$color-primary-dark-gray: #4d4d4d;
+$color-primary-light-gray: #cc9a9a;
+$color-primary-gray: #777;
+$color-second-dark-gray: #737373;
+$color-primary-green: #af5b5e;
+$color-primary-turquoise: #d9d9d9;
+
+$font-weight-thin: 100;
+$font-weight-light: 300;
+
+$font-size-0: 0px;
+$font-size-14: 14px;
+$font-size-22: 22px;
+$font-size-24: 24px;
+$font-size-30: 30px;
+$font-size-100: 100px;
+$font-size-full: 100%;
+
+$screen-xs-max: 430px;

@@ -1,0 +1,16 @@
+@import '/src/styles/variables.scss';
+
+.filters {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	position: absolute;
+	right: 0;
+	left: 0;
+
+	@media (max-width: $screen-xs-max) {
+		& {
+			bottom: 10px;
+		}
+	}
+}
